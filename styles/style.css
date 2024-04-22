@@ -15,7 +15,7 @@ html {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+  background-color: #3b3b3b;
 }
 
 h1,
@@ -35,4 +35,85 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  background-color: #1b1919;
+  block-size: 800px;
+  display: flex;
+  inline-size: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 133px 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  justify-content: space-between;
+}
+
+.result__video-container {
+  inline-size: 711px;
+}
+
+.result__video {
+
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.content__details {
+ inline-size: 400px;
+}
+
+.content__list {
+  position: relative;
+  block-size: 292px;
+  overflow-y: auto;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.content__list-item:not(:last-child) {
+  padding-block-end: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  inline-size: 194px;
+}
+
+.content__video-card-description-container {
+  inline-size: 100%;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 0.94em;
+}
+
+.button {
+  inline-size: 194px;
+  block-size: 34px;
+  border: 1px white solid;
+  background-color: transparent;
 }
