@@ -158,7 +158,7 @@ label:has(:focus-visible) {
   background-image: linear-gradient(#fff, #fff);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px 15px;
+  background-size: 15px 15px;
 }
 
 .button {
@@ -222,16 +222,16 @@ label:has(:focus-visible) {
   overflow-y: auto;
 }
 
-.content__list::-webkit-scrollbar {
-  width: 0;
-}
-
 .content__list-item:not(:last-child) {
-  padding-block-end: 34px;
+  padding-block-end: 36px;
 }
 
 .content__card-link {
   display: block;
+}
+
+.content__card-link:active {
+  background: #545050;
 }
 
 .content__card-link:hover {
@@ -245,8 +245,6 @@ label:has(:focus-visible) {
 }
 
 .content__card-link_current {
-  padding-block-start: 3px;
-  padding-block-end: 1px;
   background: #545050;
 }
 
@@ -258,7 +256,6 @@ label:has(:focus-visible) {
 
 .content__video-card-description-container {
   color: #fff;
-  padding-block-start: -4px;
   margin-inline-start: 3px;
   flex-grow: 1;
 }
@@ -279,6 +276,8 @@ label:has(:focus-visible) {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
+  object-position: center;
   margin-inline-end: 3px;
 }
 
