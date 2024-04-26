@@ -1,1 +1,1 @@
-https://github.com/Rezvens/posmotri-v-okno.git
+https://github.com/Rezvens/posmotri_v_okno
