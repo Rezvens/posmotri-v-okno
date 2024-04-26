@@ -146,7 +146,6 @@ label:has(:focus-visible) {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
   z-index: 0;
   display: inline-block;
   width: 19px;
@@ -154,11 +153,8 @@ label:has(:focus-visible) {
   border: 1px solid #fff;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
   content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
   background-image: linear-gradient(#fff, #fff);
   background-repeat: no-repeat;
   background-position: center;
