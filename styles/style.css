@@ -254,7 +254,7 @@ label:has(:focus-visible) {
   justify-content: space-between;
 }
 
-/* Единственное, такое решение противоречит ТЗ: Сделать так, чтобы .content__video-card-description-container занимал всё доступное пространство, не занятое картинкой. Ведь для корректной работы text-overflow нужно жесткое ограничение ширины.*/
+/* Единственное, такое решение противоречит ТЗ: Сделать так, чтобы .content__video-card-description-container занимал всё доступное пространство, не занятое картинкой. Ведь для корректной работы text-overflow нужно жесткое ограничение ширины. Однако в Шаге №1. Лейаута сказано, что "Весь макет можно верстать в абсолютных единицах измерения."*/
 .content__video-card-description-container {
   color: #fff;
   margin-inline-start: 3px;
