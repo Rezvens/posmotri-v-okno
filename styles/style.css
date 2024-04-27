@@ -208,7 +208,7 @@ label:has(:focus-visible) {
   font-size: 75px;
   text-transform: uppercase;
   line-height: 0.94em;
-  margin-block-end: -2px;
+  margin-block-start: -4px;
 }
 
 .content__accent {
@@ -218,7 +218,7 @@ label:has(:focus-visible) {
 .content__list {
   position: relative;
   block-size: 300px;
-  margin-block-start: 20px;
+  margin-block-start: 22px;
   overflow-y: auto;
 }
 
@@ -254,10 +254,11 @@ label:has(:focus-visible) {
   justify-content: space-between;
 }
 
+/* Единственное, такое решение противоречит ТЗ: Сделать так, чтобы .content__video-card-description-container занимал всё доступное пространство, не занятое картинкой. Ведь для корректной работы text-overflow нужно жесткое ограничение ширины.*/
 .content__video-card-description-container {
   color: #fff;
   margin-inline-start: 3px;
-  flex-grow: 1;
+  inline-size: 199px; 
 }
 
 .content__video-card-title {
@@ -266,11 +267,20 @@ label:has(:focus-visible) {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 36px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
   font-size: 18px;
   font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .content__video-card-thumbnail {
